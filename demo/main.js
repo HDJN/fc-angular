@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "./_mock/menus.ts":
-/*!************************!*\
-  !*** ./_mock/menus.ts ***!
-  \************************/
+/***/ "./_mock/_menus.ts":
+/*!*************************!*\
+  !*** ./_mock/_menus.ts ***!
+  \*************************/
 /*! exports provided: menus */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -34,7 +34,7 @@ var menus = {
                     WXMENU: 'N',
                     MENUTYPE: 'MENU',
                     HASCHILD: 'Y',
-                    MENUICON: 'fc-icon-nhs',
+                    MENUICON: 'fc-icon-peizhi',
                     PARENT: 'BUDGET',
                     SORT: 1150,
                     ROUTER: '/budget',
@@ -106,7 +106,7 @@ var menus = {
                     WXMENU: 'N',
                     MENUTYPE: 'MENU',
                     HASCHILD: 'Y',
-                    MENUICON: 'fc-icon-nhs',
+                    MENUICON: 'fc-icon-peizhi',
                     PARENT: 'BUDGET',
                     SORT: 1150,
                     ROUTER: '/budget',
@@ -124,6 +124,20 @@ var menus = {
                             PARENT: 'SYSTEM',
                             SORT: 1152,
                             ROUTER: '/bgspreadList'
+                        },
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'BUDGET',
+                            MENUID: 'BGIFRAME',
+                            MENUNAME: 'iframe',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgiframeList'
                         },
                         {
                             ID: '63fbb2f0708f4fd68db04a92dd5df121',
@@ -150,25 +164,11 @@ var menus = {
                     WXMENU: 'N',
                     MENUTYPE: 'MENU',
                     HASCHILD: 'Y',
-                    MENUICON: 'fc-icon-nhs',
+                    MENUICON: 'fc-icon-peizhi',
                     PARENT: 'BUDGET',
                     SORT: 1150,
                     ROUTER: '/budget',
                     P_CHILDMENUS: [
-                        {
-                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
-                            PID: 'BUDGET',
-                            MENUID: 'SYSEDITPASSWORD',
-                            MENUNAME: '修改密码',
-                            ENABLE: 'Y',
-                            WXMENU: 'N',
-                            MENUTYPE: 'APP',
-                            APPID: 'SYSMENU',
-                            HASCHILD: 'N',
-                            PARENT: 'SYSTEM',
-                            SORT: 1152,
-                            ROUTER: '/editpasswordList'
-                        },
                         {
                             ID: '63fbb2f0708f4fd68db04a92dd5df121',
                             PID: 'BUDGET',
@@ -177,7 +177,7 @@ var menus = {
                             ENABLE: 'Y',
                             WXMENU: 'N',
                             MENUTYPE: 'APP',
-                            APPID: 'SYSMENU',
+                            APPID: 'SYSTEMBASIC',
                             HASCHILD: 'Y',
                             PARENT: 'SYSTEM',
                             SORT: 1152,
@@ -186,21 +186,21 @@ var menus = {
                                 {
                                     ID: '63fbb2f0708f4fd68db04a92dd5df121',
                                     PID: 'BUDGET',
-                                    MENUID: 'SYSTEMBASIC',
-                                    MENUNAME: '用户管理',
+                                    MENUID: 'SYSROLE',
+                                    MENUNAME: '权限管理',
                                     ENABLE: 'Y',
                                     WXMENU: 'N',
                                     MENUTYPE: 'APP',
-                                    APPID: 'SYSMENU',
+                                    APPID: 'SYSROLE',
                                     HASCHILD: 'N',
                                     PARENT: 'SYSTEM',
                                     SORT: 1152,
-                                    ROUTER: '/sysmenuList'
+                                    ROUTER: '/sysroleList'
                                 },
                                 {
                                     ID: '63fbb2f0708f4fd68db04a92dd5df121',
                                     PID: 'BUDGET',
-                                    MENUID: 'SYSTEMBASIC',
+                                    MENUID: 'SYSMENU',
                                     MENUNAME: '用户管理',
                                     ENABLE: 'Y',
                                     WXMENU: 'N',
@@ -244,6 +244,239 @@ var menus = {
                     ]
                 }
             ]
+        },
+        {
+            ID: '3ae5c74930da4b1e877efabee3af0005',
+            PID: 'FC',
+            MENUID: 'FC',
+            MENUNAME: '快速开发平台',
+            ENABLE: 'Y',
+            WXMENU: 'N',
+            MENUTYPE: 'MENU',
+            HASCHILD: 'Y',
+            MENUICON: 'icon iconfont icon-ppbs',
+            SORT: 1000,
+            ROUTER: '/fc',
+            P_CHILDMENUS: [
+                {
+                    ID: '3ae5c74930dab18e877efabee3af0004',
+                    PID: 'FC',
+                    MENUID: 'BGBUSSINESS',
+                    MENUNAME: '业务组件',
+                    ENABLE: 'Y',
+                    WXMENU: 'N',
+                    MENUTYPE: 'MENU',
+                    HASCHILD: 'Y',
+                    MENUICON: 'fc-icon-peizhi',
+                    PARENT: 'BUDGET',
+                    SORT: 1150,
+                    ROUTER: '/budget',
+                    P_CHILDMENUS: [
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGLISTINFO',
+                            MENUNAME: '查询',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bglistinfoList'
+                        },
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGCREATE',
+                            MENUNAME: '新增',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgcreateList'
+                        },
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGUPDATE',
+                            MENUNAME: '修改',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgupdateList'
+                        },
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGREMOVE',
+                            MENUNAME: '删除',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgremoveList'
+                        }
+                    ]
+                },
+                {
+                    ID: '3ae5c74930dab18e877efabee3af0004',
+                    PID: 'FC',
+                    MENUID: 'BGDEMO',
+                    MENUNAME: 'UI示例',
+                    ENABLE: 'Y',
+                    WXMENU: 'N',
+                    MENUTYPE: 'MENU',
+                    HASCHILD: 'Y',
+                    MENUICON: 'fc-icon-peizhi',
+                    PARENT: 'BUDGET',
+                    SORT: 1150,
+                    ROUTER: '/budget',
+                    P_CHILDMENUS: [
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGSPREAD',
+                            MENUNAME: 'spread报表',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgspreadList'
+                        },
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGIFRAME',
+                            MENUNAME: 'iframe',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgiframeList'
+                        },
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'BGTABLE',
+                            MENUNAME: '表格',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSMENU',
+                            HASCHILD: 'N',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/bgtableList'
+                        }
+                    ]
+                },
+                {
+                    ID: '3ae5c74930dab18e877efabee3af0004',
+                    PID: 'FC',
+                    MENUID: 'SYSTEM',
+                    MENUNAME: '系统管理',
+                    ENABLE: 'Y',
+                    WXMENU: 'N',
+                    MENUTYPE: 'MENU',
+                    HASCHILD: 'Y',
+                    MENUICON: 'fc-icon-peizhi',
+                    PARENT: 'FC',
+                    SORT: 1150,
+                    ROUTER: '/budget',
+                    P_CHILDMENUS: [
+                        {
+                            ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                            PID: 'FC',
+                            MENUID: 'SYSTEMBASIC',
+                            MENUNAME: '基础设置',
+                            ENABLE: 'Y',
+                            WXMENU: 'N',
+                            MENUTYPE: 'APP',
+                            APPID: 'SYSTEMBASIC',
+                            HASCHILD: 'Y',
+                            PARENT: 'SYSTEM',
+                            SORT: 1152,
+                            ROUTER: '/sysmenuList',
+                            P_CHILDMENUS: [
+                                {
+                                    ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                                    PID: 'FC',
+                                    MENUID: 'SYSROLE',
+                                    MENUNAME: '权限管理',
+                                    ENABLE: 'Y',
+                                    WXMENU: 'N',
+                                    MENUTYPE: 'APP',
+                                    APPID: 'SYSROLE',
+                                    HASCHILD: 'N',
+                                    PARENT: 'SYSTEM',
+                                    SORT: 1152,
+                                    ROUTER: '/sysroleList'
+                                },
+                                {
+                                    ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                                    PID: 'FC',
+                                    MENUID: 'SYSMENU',
+                                    MENUNAME: '用户管理',
+                                    ENABLE: 'Y',
+                                    WXMENU: 'N',
+                                    MENUTYPE: 'APP',
+                                    APPID: 'SYSMENU',
+                                    HASCHILD: 'N',
+                                    PARENT: 'SYSTEM',
+                                    SORT: 1152,
+                                    ROUTER: '/sysmenuList'
+                                },
+                                {
+                                    ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                                    PID: 'FC',
+                                    MENUID: 'SYSMENU',
+                                    MENUNAME: '菜单管理',
+                                    ENABLE: 'Y',
+                                    WXMENU: 'N',
+                                    MENUTYPE: 'APP',
+                                    APPID: 'SYSMENU',
+                                    HASCHILD: 'N',
+                                    PARENT: 'SYSTEM',
+                                    SORT: 1152,
+                                    ROUTER: '/sysmenuList'
+                                },
+                                {
+                                    ID: '63fbb2f0708f4fd68db04a92dd5df121',
+                                    PID: 'FC',
+                                    MENUID: 'SYSLOG',
+                                    MENUNAME: '日志管理',
+                                    ENABLE: 'Y',
+                                    WXMENU: 'N',
+                                    MENUTYPE: 'APP',
+                                    APPID: 'SYSMENU',
+                                    HASCHILD: 'N',
+                                    PARENT: 'SYSTEM',
+                                    SORT: 1152,
+                                    ROUTER: '/syslogList'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };
@@ -263,9 +496,25 @@ var map = {
 		"./src/feature/budget/budget.module.ts",
 		"feature-budget-budget-module"
 	],
-	"./components/fcdemo/fcdemo.module": [
-		"./src/feature/budget/components/fcdemo/fcdemo.module.ts",
-		"components-fcdemo-fcdemo-module"
+	"../feature/fc/fc.module": [
+		"./src/feature/fc/fc.module.ts",
+		"feature-fc-fc-module"
+	],
+	"./budget_report/bgreport.module": [
+		"./src/feature/budget/budget_report/bgreport.module.ts",
+		"budget_report-bgreport-module"
+	],
+	"./fcdemo/fcdemo.module": [
+		"./src/feature/fc/fcdemo/fcdemo.module.ts",
+		"fcdemo-fcdemo-module"
+	],
+	"./fcsystem/fcsystem.module": [
+		"./src/feature/fc/fcsystem/fcsystem.module.ts",
+		"fcsystem-fcsystem-module"
+	],
+	"./tx/tx.module": [
+		"./src/feature/budget/tx/tx.module.ts",
+		"tx-tx-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -287,55 +536,6 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 };
 webpackAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 module.exports = webpackAsyncContext;
-
-/***/ }),
-
-/***/ "./src/app/app-routing.module.ts":
-/*!***************************************!*\
-  !*** ./src/app/app-routing.module.ts ***!
-  \***************************************/
-/*! exports provided: AppRoutes */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutes", function() { return AppRoutes; });
-/* harmony import */ var src_core_service_user_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/core/service/user.service */ "./src/core/service/user.service.ts");
-/* harmony import */ var _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/layout/layout.component */ "./src/app/components/layout/layout.component.ts");
-/* harmony import */ var _components_signin_signin_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/signin/signin.component */ "./src/app/components/signin/signin.component.ts");
-/* harmony import */ var _components_error_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/error/error.component */ "./src/app/components/error/error.component.ts");
-/* harmony import */ var _components_building_building_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/building/building.component */ "./src/app/components/building/building.component.ts");
-
-
-
-
-
-var AppRoutes = [
-    {
-        path: '',
-        component: _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_1__["LayoutComponent"],
-        canActivate: [src_core_service_user_service__WEBPACK_IMPORTED_MODULE_0__["UserService"]],
-        children: [
-            {
-                path: 'error',
-                component: _components_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"]
-            },
-            {
-                path: 'building',
-                component: _components_building_building_component__WEBPACK_IMPORTED_MODULE_4__["BuildingComponent"]
-            },
-            {
-                path: 'budget',
-                loadChildren: '../feature/budget/budget.module#BudgetModule'
-            }
-        ]
-    },
-    {
-        path: 'signin',
-        component: _components_signin_signin_component__WEBPACK_IMPORTED_MODULE_2__["SigninComponent"]
-    },
-];
-
 
 /***/ }),
 
@@ -392,15 +592,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ng-zorro-antd */ "./node_modules/ng-zorro-antd/fesm5/ng-zorro-antd.js");
 /* harmony import */ var src_core_core_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! src/core/core.module */ "./src/core/core.module.ts");
 /* harmony import */ var src_core_service_user_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! src/core/service/user.service */ "./src/core/service/user.service.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _components_building_building_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/building/building.component */ "./src/app/components/building/building.component.ts");
 /* harmony import */ var _components_error_error_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/error/error.component */ "./src/app/components/error/error.component.ts");
 /* harmony import */ var _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/layout/layout.component */ "./src/app/components/layout/layout.component.ts");
 /* harmony import */ var _components_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/signin/signin.component */ "./src/app/components/signin/signin.component.ts");
 /* harmony import */ var _service_layout_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./service/layout.service */ "./src/app/service/layout.service.ts");
-/* harmony import */ var _service_services_services__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./service/services.services */ "./src/app/service/services.services.ts");
-/* harmony import */ var _components_building_building_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./components/building/building.component */ "./src/app/components/building/building.component.ts");
-/* harmony import */ var _service_routereusestrategy_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./service/routereusestrategy.service */ "./src/app/service/routereusestrategy.service.ts");
+/* harmony import */ var _service_routereusestrategy_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./service/routereusestrategy.service */ "./src/app/service/routereusestrategy.service.ts");
+/* harmony import */ var _service_system_services__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./service/system.services */ "./src/app/service/system.services.ts");
+/* harmony import */ var _app_route__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./app.route */ "./src/app/app.route.ts");
+/* harmony import */ var _components_forgot_forgot_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/forgot/forgot.component */ "./src/app/components/forgot/forgot.component.ts");
+/* harmony import */ var _components_lockscreen_lockscreen_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/lockscreen/lockscreen.component */ "./src/app/components/lockscreen/lockscreen.component.ts");
+/* harmony import */ var _components_signup_signup_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/signup/signup.component */ "./src/app/components/signup/signup.component.ts");
+
+
+
 
 
 
@@ -431,36 +637,110 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_4__["NgModule"])({
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_6__["BrowserModule"],
-                ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__["NgZorroAntdModule"].forRoot(),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_5__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
-                _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(_app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutes"]),
-                src_core_core_module__WEBPACK_IMPORTED_MODULE_10__["CoreModule"]
+                _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouterModule"].forRoot(_app_route__WEBPACK_IMPORTED_MODULE_20__["AppRoutes"]),
+                src_core_core_module__WEBPACK_IMPORTED_MODULE_10__["CoreModule"],
+                ng_zorro_antd__WEBPACK_IMPORTED_MODULE_9__["NgZorroAntdModule"].forRoot()
             ],
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"],
+                _app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"],
                 _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_15__["LayoutComponent"],
                 _components_error_error_component__WEBPACK_IMPORTED_MODULE_14__["ErrorComponent"],
                 _components_signin_signin_component__WEBPACK_IMPORTED_MODULE_16__["SigninComponent"],
-                _components_building_building_component__WEBPACK_IMPORTED_MODULE_19__["BuildingComponent"],
+                _components_building_building_component__WEBPACK_IMPORTED_MODULE_13__["BuildingComponent"],
+                _components_forgot_forgot_component__WEBPACK_IMPORTED_MODULE_21__["ForgotComponent"],
+                _components_lockscreen_lockscreen_component__WEBPACK_IMPORTED_MODULE_22__["LockscreenComponent"],
+                _components_signup_signup_component__WEBPACK_IMPORTED_MODULE_23__["SignupComponent"] // 组件-注册
             ],
             providers: [
                 src_core_service_user_service__WEBPACK_IMPORTED_MODULE_11__["UserService"],
                 _service_layout_service__WEBPACK_IMPORTED_MODULE_17__["LayoutService"],
-                { provide: _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouteReuseStrategy"], useClass: _service_routereusestrategy_service__WEBPACK_IMPORTED_MODULE_20__["FcRouteReuseStrategy"] },
+                { provide: _angular_router__WEBPACK_IMPORTED_MODULE_8__["RouteReuseStrategy"], useClass: _service_routereusestrategy_service__WEBPACK_IMPORTED_MODULE_18__["FcRouteReuseStrategy"] },
                 {
                     provide: _angular_common__WEBPACK_IMPORTED_MODULE_1__["LocationStrategy"],
                     useClass: _angular_common__WEBPACK_IMPORTED_MODULE_1__["HashLocationStrategy"]
                 }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_13__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_service_services_services__WEBPACK_IMPORTED_MODULE_18__["SystemService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_service_system_services__WEBPACK_IMPORTED_MODULE_19__["SystemService"]])
     ], AppModule);
     return AppModule;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/app.route.ts":
+/*!******************************!*\
+  !*** ./src/app/app.route.ts ***!
+  \******************************/
+/*! exports provided: AppRoutes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutes", function() { return AppRoutes; });
+/* harmony import */ var src_core_service_user_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/core/service/user.service */ "./src/core/service/user.service.ts");
+/* harmony import */ var _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/layout/layout.component */ "./src/app/components/layout/layout.component.ts");
+/* harmony import */ var _components_signin_signin_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/signin/signin.component */ "./src/app/components/signin/signin.component.ts");
+/* harmony import */ var _components_error_error_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/error/error.component */ "./src/app/components/error/error.component.ts");
+/* harmony import */ var _components_building_building_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/building/building.component */ "./src/app/components/building/building.component.ts");
+/* harmony import */ var _components_forgot_forgot_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/forgot/forgot.component */ "./src/app/components/forgot/forgot.component.ts");
+/* harmony import */ var _components_lockscreen_lockscreen_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/lockscreen/lockscreen.component */ "./src/app/components/lockscreen/lockscreen.component.ts");
+/* harmony import */ var _components_signup_signup_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/signup/signup.component */ "./src/app/components/signup/signup.component.ts");
+
+
+
+
+
+
+
+
+var AppRoutes = [
+    {
+        path: '',
+        component: _components_layout_layout_component__WEBPACK_IMPORTED_MODULE_1__["LayoutComponent"],
+        canActivate: [src_core_service_user_service__WEBPACK_IMPORTED_MODULE_0__["UserService"]],
+        children: [
+            {
+                path: 'error',
+                component: _components_error_error_component__WEBPACK_IMPORTED_MODULE_3__["ErrorComponent"]
+            },
+            {
+                path: 'brouteuilding',
+                component: _components_building_building_component__WEBPACK_IMPORTED_MODULE_4__["BuildingComponent"]
+            },
+            {
+                path: 'fc',
+                loadChildren: '../feature/fc/fc.module#FcModule'
+            },
+            {
+                path: 'budget',
+                loadChildren: '../feature/budget/budget.module#BudgetModule'
+            }
+        ]
+    },
+    {
+        path: 'signin',
+        component: _components_signin_signin_component__WEBPACK_IMPORTED_MODULE_2__["SigninComponent"]
+    },
+    {
+        path: 'forgot',
+        component: _components_forgot_forgot_component__WEBPACK_IMPORTED_MODULE_5__["ForgotComponent"]
+    },
+    {
+        path: 'lockscreen',
+        component: _components_lockscreen_lockscreen_component__WEBPACK_IMPORTED_MODULE_6__["LockscreenComponent"]
+    },
+    {
+        path: 'signup',
+        component: _components_signup_signup_component__WEBPACK_IMPORTED_MODULE_7__["SignupComponent"]
+    }
+];
 
 
 /***/ }),
@@ -560,6 +840,54 @@ var ErrorComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/forgot/forgot.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/forgot/forgot.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "忘记密码"
+
+/***/ }),
+
+/***/ "./src/app/components/forgot/forgot.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/forgot/forgot.component.ts ***!
+  \*******************************************************/
+/*! exports provided: ForgotComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotComponent", function() { return ForgotComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+var ForgotComponent = /** @class */ (function () {
+    function ForgotComponent(router) {
+        this.router = router;
+    }
+    ForgotComponent.prototype.ngOnInit = function () {
+    };
+    ForgotComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'forgot',
+            template: __webpack_require__(/*! ./forgot.component.html */ "./src/app/components/forgot/forgot.component.html"),
+            styles: ["\n  \n  "]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], ForgotComponent);
+    return ForgotComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/layout/layout.component.html":
 /*!*********************************************************!*\
   !*** ./src/app/components/layout/layout.component.html ***!
@@ -567,7 +895,7 @@ var ErrorComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nz-layout class=\"layout\">\n  <!-- 顶部工具栏 -->\n  <nz-header>\n    <div class=\"logo\">\n      <i class=\"icon iconfont fc-icon-tielu\"></i>\n      <span class=\"logo-text\">东软越通后台管理系统</span>\n    </div>\n    <div class=\"fc-header-right\">\n      <a class=\"text\">{{companyName}}</a>\n      <i class=\"icon iconfont yt-header-icon fc-icon-information\" (click)=\"toggleSidebar()\" title=\"消息\"></i>\n      <i class=\"icon iconfont yt-header-icon fc-icon-peizhi\" title=\"设置\"></i>\n      <i class=\"icon iconfont yt-header-icon fc-icon-wode\" title=\"我的\"></i>\n      <i class=\"icon iconfont yt-header-icon fc-icon-tuichu\" (click)=\"siginout()\" title=\"退出\"></i>\n    </div>\n  </nz-header>\n  <nz-layout style=\"width: 100%;\">\n    <!-- 菜单导航 -->\n    <nz-sider [(nzWidth)]=\"menuWidth\" class=\"sidebar-menu\" style=\"background:#fff;\">\n      <ul nz-menu [nzMode]=\"'inline'\" style=\"height: calc(100% - 40px);\" [nzInlineCollapsed]=\"menuIsCollapsed\">\n        <ng-container *ngFor=\"let menu of _menus\">\n          <!-- 一级菜单，没有下级 -->\n          <li nz-menu-item *ngIf=\"menu.HASCHILD==='N'\" (click)=\"selectedMenu(menu)\">\n            <span title><i nz-icon type=\"user\"></i>{{menu.MENUNAME}}</span>\n          </li>\n          <!-- 一级菜单，有下级 -->\n          <li nz-submenu *ngIf=\"menu.HASCHILD==='Y' && menu.P_CHILDMENUS && menu.P_CHILDMENUS.length!==0\">\n            <span title><i nz-icon type=\"user\"></i>{{menu.MENUNAME}}</span>\n            <ul>\n              <ng-container *ngFor=\"let childMenu of menu.P_CHILDMENUS\">\n                <!-- 二级菜单，没有下级 -->\n                <li nz-menu-item *ngIf=\"childMenu.HASCHILD==='N'\" (click)=\"selectedMenu(childMenu);\">\n                  <span title><i nz-icon type=\"user\"></i>{{childMenu.MENUNAME}}</span>\n                </li>\n                <!-- 二级菜单，有下级 -->\n                <li nz-submenu\n                  *ngIf=\"childMenu.HASCHILD==='Y' && childMenu.P_CHILDMENUS && childMenu.P_CHILDMENUS.length!==0\">\n                  <span title><i nz-icon type=\"user\"></i>{{childMenu.MENUNAME}}</span>\n                  <ul>\n                    <ng-container *ngFor=\"let grandSonMenu of childMenu.P_CHILDMENUS\">\n                      <!-- 三级级菜单，没有下级 -->\n                      <li nz-menu-item *ngIf=\"grandSonMenu.HASCHILD==='N'\" (click)=\"selectedMenu(grandSonMenu);\">\n                        <span title><i nz-icon type=\"user\"></i>{{grandSonMenu.MENUNAME}}</span>\n                      </li>\n                      <!-- 三级菜单，有下级 -->\n                      <li nz-submenu\n                        *ngIf=\"grandSonMenu.HASCHILD==='Y' && grandSonMenu.P_CHILDMENUS && grandSonMenu.P_CHILDMENUS.length!==0\">\n                        <span title><i nz-icon type=\"user\"></i>{{grandSonMenu.MENUNAME}}</span>\n                        <ul>\n                          <li nz-menu-item *ngFor=\"let lastChidMenu of grandSonMenu.P_CHILDMENUS\"\n                            (click)=\"selectedMenu(lastChidMenu)\">\n                            <span title><i nz-icon type=\"user\"></i>{{lastChidMenu.MENUNAME}}</span>\n                          </li>\n                        </ul>\n                      </li>\n                    </ng-container>\n                  </ul>\n                </li>\n              </ng-container>\n            </ul>\n          </li>\n        </ng-container>\n      </ul>\n      <!-- 切换布局控制按钮 -->\n      <div class=\"layout-toggle\">\n        <i class=\"icon iconfont fc-icon-arrowleft\" (click)=\"toggleLayout()\">\n        </i>\n      </div>\n    </nz-sider>\n    <nz-layout style=\"padding:0 24px 24px\">\n      <!-- 选项卡导航 -->\n      <nz-tabset [nzType]=\"'card'\" [nzSelectedIndex]=\"fcSelectedIndex\">\n        <nz-tab *ngFor=\"let tab of fcTabs;index as i\" (nzClick)=\"selectedTabMenu(tab)\" [nzTitle]=\"titleTemplate\">\n          <ng-template #titleTemplate>\n            <div>{{ tab.name }}<i *ngIf=\"i>0\" nz-icon type=\"close\" class=\"ant-tabs-close-x\" (click)=\"closeTabNav(tab)\"></i></div>\n          </ng-template>\n        </nz-tab>\n      </nz-tabset>\n      <nz-content style=\"background:#fff; padding: 24px; min-height: 280px;height: 500px;overflow: auto;\">\n        <div style=\"color: red;font-size:100px;\">\n          <!-- 内容区 -->\n          <router-outlet [ngStyle]=\"{'height':'100%'}\"></router-outlet>\n        </div>\n      </nz-content>\n    </nz-layout>\n  </nz-layout>\n</nz-layout>\n<!-- 消息侧边栏 -->\n<div class=\"navside\">\n  <nz-drawer [nzWidth]=\"300\" [nzMaskStyle]=\"{'height':'auto'}\" nzWrapClassName=\"navside-drawer\" [nzClosable]=\"false\"\n    [nzVisible]=\"navsideVisible\" nzPlacement=\"right\" nzTitle=\"\" (nzOnClose)=\"closeNavSide()\" #navside>\n    <nz-tabset>\n      <nz-tab [nzTitle]=\"titleTemplate\">\n        <ng-template #titleTemplate>未读消息</ng-template>\n        <div>\n          content1\n        </div>\n      </nz-tab>\n      <nz-tab [nzTitle]=\"titleTemplate\">\n        <ng-template #titleTemplate>已读消息</ng-template>\n        content2\n      </nz-tab>\n    </nz-tabset>\n  </nz-drawer>\n</div>\n"
+module.exports = "<nz-layout class=\"layout\">\n  <!-- 顶部工具栏 -->\n  <nz-header>\n    <div class=\"logo\">\n      <i class=\"icon iconfont fc-icon-tielu\"></i>\n      <span class=\"logo-text\">东软越通后台管理系统</span>\n    </div>\n    <div class=\"fc-header-right\">\n      <i class=\"icon iconfont yt-header-icon fc-icon-information\" (click)=\"toggleSidebar()\" title=\"消息\"></i>\n      <i class=\"icon iconfont yt-header-icon fc-icon-peizhi\" title=\"设置\"></i>\n      <i class=\"icon iconfont yt-header-icon fc-icon-wode\" title=\"我的\"></i>\n      <i class=\"icon iconfont yt-header-icon fc-icon-tuichu\" (click)=\"siginout()\" title=\"退出\"></i>\n      <nz-avatar class=\"avatar\" [nzSize]=\"32\" nzIcon=\"user\"></nz-avatar>\n      <a class=\"text\">{{companyName}}</a>\n    </div>\n  </nz-header>\n  <nz-layout style=\"width: 100%;\">\n    <!-- 菜单导航 -->\n    <nz-sider [(nzWidth)]=\"menuWidth\" class=\"sidebar-menu\" style=\"background:#fff;\">\n      <ul nz-menu [nzMode]=\"'inline'\" style=\"height: calc(100% - 40px);overflow: auto;\"\n        [nzInlineCollapsed]=\"menuIsCollapsed\">\n        <ng-container *ngFor=\"let menu of _menus\">\n          <!-- 一级菜单，没有下级 -->\n          <li nz-menu-item *ngIf=\"menu.HASCHILD==='N'\" (click)=\"selectedMenu(menu)\">\n            <span title>\n              <i class=\"icon iconfont menu-icon\" [ngClass]=\"menu.MENUICON\"></i>\n              <span class=\"first-level-title\">{{menu.MENUNAME}}</span>\n            </span>\n          </li>\n          <!-- 一级菜单，有下级 -->\n          <li nz-submenu [nzOpen]=\"true\"\n            *ngIf=\"menu.HASCHILD==='Y' && menu.P_CHILDMENUS && menu.P_CHILDMENUS.length!==0\">\n            <span title>\n              <i class=\"icon iconfont menu-icon\" [ngClass]=\"menu.MENUICON\"></i>\n              <span class=\"first-level-title\">{{menu.MENUNAME}}</span></span>\n            <ul>\n              <ng-container *ngFor=\"let childMenu of menu.P_CHILDMENUS\">\n                <!-- 二级菜单，没有下级 -->\n                <li nz-menu-item *ngIf=\"childMenu.HASCHILD==='N'\" (click)=\"selectedMenu(childMenu);\">\n                  <span title>\n                    <span>{{childMenu.MENUNAME}}</span>\n                  </span>\n                </li>\n                <!-- 二级菜单，有下级 -->\n                <li nz-submenu\n                  *ngIf=\"childMenu.HASCHILD==='Y' && childMenu.P_CHILDMENUS && childMenu.P_CHILDMENUS.length!==0\">\n                  <span title>\n                    <i nz-icon [type]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"></i>\n                    <span>{{childMenu.MENUNAME}}</span>\n                  </span>\n                  <ul>\n                    <ng-container *ngFor=\"let grandSonMenu of childMenu.P_CHILDMENUS\">\n                      <!-- 三级级菜单，没有下级 -->\n                      <li nz-menu-item *ngIf=\"grandSonMenu.HASCHILD==='N'\" (click)=\"selectedMenu(grandSonMenu);\">\n                        <span title>\n                          <i nz-icon [type]=\"isCollapsed ? 'menu-unfold' : 'menu-fold'\"></i>\n                          {{grandSonMenu.MENUNAME}}</span>\n                      </li>\n                      <!-- 三级菜单，有下级 -->\n                      <li nz-submenu\n                        *ngIf=\"grandSonMenu.HASCHILD==='Y' && grandSonMenu.P_CHILDMENUS && grandSonMenu.P_CHILDMENUS.length!==0\">\n                        <span title>\n                          {{grandSonMenu.MENUNAME}}</span>\n                        <ul>\n                          <li nz-menu-item *ngFor=\"let lastChidMenu of grandSonMenu.P_CHILDMENUS\"\n                            (click)=\"selectedMenu(lastChidMenu)\">\n                            <span title><i class=\"icon iconfont menu-icon\"\n                                [ngClass]=\"lastChidMenu.MENUICON\"></i>{{lastChidMenu.MENUNAME}}</span>\n                          </li>\n                        </ul>\n                      </li>\n                    </ng-container>\n                  </ul>\n                </li>\n              </ng-container>\n            </ul>\n          </li>\n        </ng-container>\n      </ul>\n      <!-- 切换布局控制按钮 -->\n      <div class=\"layout-toggle\">\n        <i class=\"icon iconfont fc-icon-arrowleft\"  [ngClass]=\"{'arrowright':menuWidth===64}\" (click)=\"toggleLayout()\">\n        </i>\n      </div>\n    </nz-sider>\n    <nz-layout>\n      <!-- 选项卡导航 -->\n      <nz-tabset class=\"fc-tabnav\" [nzType]=\"'line'\" [nzSize]=\"'small'\" [nzSelectedIndex]=\"fcSelectedIndex\">\n        <nz-tab *ngFor=\"let tab of fcTabs;index as i\" (nzClick)=\"selectedTabMenu(tab)\" [nzTitle]=\"titleTemplate\">\n          <ng-template #titleTemplate>\n            <div [ngClass]=\"{'tab-home':i===0}\">\n              <i *ngIf=\"tab.icon!==''\" class=\"icon iconfont\" [ngClass]=\"tab.icon\"></i>\n              {{ tab.name }}<i *ngIf=\"i>0\" nz-icon type=\"close\" class=\"ant-tabs-close-x\" (click)=\"closeTabNav(tab)\"></i>\n            </div>\n          </ng-template>\n        </nz-tab>\n      </nz-tabset>\n      <!-- 内容区 -->\n      <nz-content class=\"fc-main-wrap\">\n        <div class=\"fc-main\" >\n          <router-outlet [ngStyle]=\"{'height':'100%'}\"></router-outlet>\n        </div>\n      </nz-content>\n    </nz-layout>\n  </nz-layout>\n</nz-layout>\n<!-- 消息侧边栏 -->\n<div class=\"navside\">\n  <nz-drawer [nzWidth]=\"300\" [nzMaskStyle]=\"{'height':'auto'}\" nzWrapClassName=\"navside-drawer\" [nzClosable]=\"false\"\n    [nzVisible]=\"navsideVisible\" nzPlacement=\"right\" nzTitle=\"\" (nzOnClose)=\"closeNavSide()\" #navside>\n    <nz-tabset>\n      <nz-tab [nzTitle]=\"titleTemplate\">\n        <ng-template #titleTemplate>未读消息</ng-template>\n        <div>\n          content1\n        </div>\n      </nz-tab>\n      <nz-tab [nzTitle]=\"titleTemplate\">\n        <ng-template #titleTemplate>已读消息</ng-template>\n        content2\n      </nz-tab>\n    </nz-tabset>\n  </nz-drawer>\n</div>\n"
 
 /***/ }),
 
@@ -634,7 +962,7 @@ var LayoutComponent = /** @class */ (function () {
                         close: true,
                         icon: selectMenu_1_1.MENUICON,
                         content: selectMenu_1_1,
-                        refresh: 'Y'
+                        refresh: 'N'
                     };
                     if (_this.fcTabs.length === 0) {
                         tab.enabled = true;
@@ -660,7 +988,7 @@ var LayoutComponent = /** @class */ (function () {
             PID: _environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__["environment"].pid,
             MENUTYPE: 'INURL',
             MENUNAME: '首页',
-            MENUICON: 'fc-icon-home'
+            MENUICON: 'fc-icon-shouye'
         });
         //导航选项卡
         if (this.fcTabs) {
@@ -673,20 +1001,20 @@ var LayoutComponent = /** @class */ (function () {
                     enabled: true,
                     name: '首页',
                     close: false,
-                    icon: 'fc-icon-home',
-                    refresh: 'Y',
+                    icon: 'fc-icon-shouye',
+                    refresh: 'N',
                     content: { ID: '0', MENUID: 'HOME', ROUTER: 'home', PID: _environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__["environment"].pid, MENUTYPE: 'INURL' }
                 });
                 console.log(this.fcTabs);
             }
         }
-        this.router.navigate(['/' + 'budget' + '/home']);
+        this.router.navigate(['/' + _environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__["environment"].pid.toLocaleLowerCase() + '/home']);
     };
     /**
      * 切换布局
      */
     LayoutComponent.prototype.toggleLayout = function () {
-        this.menuWidth = this.menuWidth === 50 ? 200 : 50;
+        this.menuWidth = this.menuWidth === 64 ? 200 : 64;
         this.menuIsCollapsed = this.menuIsCollapsed === true ? false : true;
     };
     /**
@@ -732,7 +1060,22 @@ var LayoutComponent = /** @class */ (function () {
      * @param tab
      */
     LayoutComponent.prototype.closeTabNav = function (tab) {
-        this.selectMenu[tab.content['MENUID']] = '';
+        if (tab.close) {
+            this.fcTabs.splice(this.fcTabs.indexOf(tab), 1);
+            var i_1 = 0;
+            this.fcTabs.forEach(function (item) {
+                item.index = i_1++;
+            });
+            if (this.fcTabs.length > 0) {
+                if (this.fcSelectedIndex && tab.index === this.fcSelectedIndex) {
+                    src_core_service_common_service__WEBPACK_IMPORTED_MODULE_4__["CommonService"].event('selectedMenu', this.fcTabs[this.fcSelectedIndex - 1].content);
+                }
+                else if (this.fcSelectedIndex && tab.index > this.fcSelectedIndex) {
+                    this.fcSelectedIndex = tab.index;
+                    src_core_service_common_service__WEBPACK_IMPORTED_MODULE_4__["CommonService"].event('selectedMenu', this.fcTabs[this.fcSelectedIndex].content);
+                }
+            }
+        }
     };
     /**
      * 退出登录
@@ -755,13 +1098,61 @@ var LayoutComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'layout',
             template: __webpack_require__(/*! ./layout.component.html */ "./src/app/components/layout/layout.component.html"),
-            styles: ["\n      .layout {\n        width: 100%;\n        height: 100%;\n      }\n      .logo {\n        overflow: auto;\n        float: left;\n      }\n      .logo .iconfont {\n        color: #fff;\n        font-size: 30px;\n        float: left;\n        margin-right: 10px;\n      }\n      .logo-text {\n        color: #fff;\n        float: left;\n        font-size: 20px;\n      }\n      .fc-header-right {\n        float: right;\n      }\n      .fc-header-right .yt-header-icon {\n        font-size: 26px;\n        color: #fff;\n        margin-right: 15px;\n        cursor: pointer;\n        float: left;\n      }\n      .fc-header-right .text {\n        font-size: 16px;\n        color: #fff;\n        margin-right: 15px;\n        cursor: pointer;\n        float: left;\n      }\n      .sidebar-nav {\n        position: relative;\n      }\n      .layout-toggle {\n        positon: absolute;\n        left: 0;\n        bottom: 0;\n        width: 100%;\n        height: 40px;\n        line-height: 40px;\n        text-align: center;\n        background-color: #f5f5f5;\n      }\n      .layout-toggle .iconfont {\n        color: #333333;\n        font-size: 18px;\n        cursor: pointer;\n      }\n      .layout-toggle .iconfont:hover {\n        color: #000000;\n        font-weight: bold;\n      }\n      .ant-drawer {\n        width: auto;\n        height: auto;\n      }\n      ::ng-deep .navside-drawer.ant-drawer-content-wrapper {\n        background-color: #ffffff;\n        top: 64px;\n        height: calc(100% - 64px);\n      }\n      ::ng-deep .navside-drawer .ant-drawer-body {\n        padding: 0;\n      }\n      ::ng-deep .ant-tabs .anticon-close {\n        cursor: pointer;\n      }\n    "]
+            styles: ["\n      .layout {\n        width: 100%;\n        height: 100%;\n      }\n      .logo {\n        overflow: auto;\n        float: left;\n      }\n      .logo .iconfont {\n        color: #fff;\n        font-size: 30px;\n        float: left;\n        margin-right: 10px;\n      }\n      .logo-text {\n        color: #fff;\n        float: left;\n        font-size: 20px;\n      }\n      .fc-header-right {\n        float: right;\n      }\n      .fc-header-right .yt-header-icon {\n        font-size: 24px;\n        color: #fff;\n        margin-right: 15px;\n        cursor: pointer;\n        float: left;\n      }\n      .fc-header-right .text {\n        font-size: 16px;\n        color: #fff;\n        margin-right: 15px;\n        cursor: pointer;\n        float: left;\n      }\n      .fc-header-right .avatar {\n        cursor: pointer;\n        float: left;\n        margin-top: 15px;\n        margin-right: 5px;\n      }\n      .sidebar-nav {\n        position: relative;\n      }\n      .layout-toggle {\n        position: absolute;\n        left: 0;\n        bottom: 0;\n        width: 100%;\n        height: 40px;\n        line-height: 40px;\n        text-align: center;\n        background-color: #f5f5f5;\n        border-right: 1px solid #e8e8e8;\n      }\n      .layout-toggle .iconfont {\n        color: #333333;\n        font-size: 18px;\n        cursor: pointer;\n        transition: transform ease-in 0.8;\n        display: inline-block;\n      }\n      .layout-toggle .iconfont.arrowright {\n        transform: rotate(180deg);\n      }\n      .layout-toggle .iconfont:hover {\n        color: #000000;\n        font-weight: bold;\n      }\n      .fc-main-wrap {\n        background: #f2f6f9;\n        padding: 10px;\n      }\n      .fc-main {\n        width: 100%;\n        height: 100%;\n        overflow: hidden;\n      }\n      ::ng-deep .navside-drawer.ant-drawer-content-wrapper {\n        background-color: #ffffff;\n        top: 64px;\n        height: calc(100% - 64px);\n      }\n      ::ng-deep .navside-drawer .ant-drawer-body {\n        padding: 0;\n      }\n      ::ng-deep .ant-tabs .anticon-close {\n        cursor: pointer;\n      }\n      ::ng-deep .sidebar-menu .ant-menu-inline-collapsed {\n        width: 64px;\n      }\n      ::ng-deep .sidebar-menu .ant-menu-inline-collapsed .first-level-title {\n        display: none;\n      }\n      ::ng-deep .sidebar-menu .ant-menu-inline-collapsed > .ant-menu-submenu {\n        text-align: center;\n      }\n      ::ng-deep .sidebar-menu .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title {\n        padding: 0 !important;\n      }\n      ::ng-deep .sidebar-menu .menu-icon {\n        color: #333333;\n        margin-right: 10px;\n      }\n      ::ng-deep .ant-menu-popup::before {\n        opacity: 1;\n        background-color: red;\n      }\n      ::ng-deep .ant-menu-popup {\n        z-index: 1000;\n      }\n      ::ng-deep .fc-tabnav {\n        min-height: 40px;\n        background-color: #ffffff;\n        box-shadow: 0 3px 5px -6px #1890ff;\n      }\n      ::ng-deep .fc-tabnav .ant-tabs-bar {\n        margin-bottom: 0;\n      }\n      ::ng-deep .fc-tabnav.ant-tabs-card .ant-tabs-card-bar .ant-tabs-tab-active {\n        color: #333;\n        background: #f2f6f9;\n      }\n      ::ng-deep .fc-tabnav .card-container ::ng-deep .ant-tabs-card .ant-tabs-content .ant-tabs-tabpane {\n        background: #fff;\n        padding: 16px;\n      }\n      ::ng-deep .fc-tabnav .card-container ::ng-deep .ant-tabs-card .ant-tabs-bar {\n        border-color: #fff;\n      }\n\n      ::ng-deep .fc-tabnav .card-container ::ng-deep .ant-tabs-card .ant-tabs-bar .ant-tabs-tab {\n        border-color: transparent;\n        background: transparent;\n      }\n\n      ::ng-deep .fc-tabnav .card-container ::ng-deep .ant-tabs-card .ant-tabs-bar .ant-tabs-tab-active {\n        border-color: #fff;\n        background: #fff;\n      }\n      ::ng-deep .fc-tabnav .ant-tabs-nav .ant-tabs-tab {\n        margin-left: 0px;\n        margin-right: 0px;\n        padding: 8px 5px 8px 16px;\n      }\n      ::ng-deep .fc-tabnav .ant-tabs-nav .ant-tabs-tab .anticon {\n        margin-right: 8px;\n        font-size: 12px;\n        transform: scale(0.9);\n        margin-left: 10px;\n      }\n      .tab-home {\n        padding-right: 15px;\n      }\n    "]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"],
             src_app_service_layout_service__WEBPACK_IMPORTED_MODULE_3__["LayoutService"]])
     ], LayoutComponent);
     return LayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/lockscreen/lockscreen.component.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/lockscreen/lockscreen.component.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "锁屏"
+
+/***/ }),
+
+/***/ "./src/app/components/lockscreen/lockscreen.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/components/lockscreen/lockscreen.component.ts ***!
+  \***************************************************************/
+/*! exports provided: LockscreenComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LockscreenComponent", function() { return LockscreenComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
+
+
+var LockscreenComponent = /** @class */ (function () {
+    function LockscreenComponent(router) {
+        this.router = router;
+    }
+    LockscreenComponent.prototype.ngOnInit = function () {
+    };
+    LockscreenComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'lockscreen',
+            template: __webpack_require__(/*! ./lockscreen.component.html */ "./src/app/components/lockscreen/lockscreen.component.html"),
+            styles: ["\n  \n  "]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+    ], LockscreenComponent);
+    return LockscreenComponent;
 }());
 
 
@@ -810,7 +1201,7 @@ var SigninComponent = /** @class */ (function () {
     }
     SigninComponent.prototype.ngOnInit = function () {
         if (this.loginValid(this.userId, this.password)) {
-            this.router.navigate(['/' + 'budget' + '/home']);
+            this.router.navigate(['/' + src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__["environment"].pid.toLocaleLowerCase() + '/home']);
         }
     };
     /**
@@ -821,7 +1212,7 @@ var SigninComponent = /** @class */ (function () {
             this.hasError = false;
             src_core_service_cache_service__WEBPACK_IMPORTED_MODULE_3__["CacheService"].setS("userinfo", { USERCODE: 'admin' });
             src_core_service_cache_service__WEBPACK_IMPORTED_MODULE_3__["CacheService"].setS("token", 'ab2be4ef08c0418bab13a6a88c9772e7');
-            this.router.navigate(['/' + 'budget' + '/home']);
+            this.router.navigate(['/' + src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__["environment"].pid.toLocaleLowerCase() + '/home']);
         }
         else {
             this.hasError = true;
@@ -861,6 +1252,67 @@ module.exports = ".login-in {\n  position: fixed;\n  top: 0;\n  left: 0;\n  widt
 
 /***/ }),
 
+/***/ "./src/app/components/signup/signup.component.html":
+/*!*********************************************************!*\
+  !*** ./src/app/components/signup/signup.component.html ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "注册\r\n"
+
+/***/ }),
+
+/***/ "./src/app/components/signup/signup.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/components/signup/signup.component.ts ***!
+  \*******************************************************/
+/*! exports provided: SignupComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupComponent", function() { return SignupComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../environments/environment.dev */ "./src/environments/environment.dev.ts");
+
+
+
+
+
+var SignupComponent = /** @class */ (function () {
+    function SignupComponent(router, fb) {
+        this.router = router;
+        this.fb = fb;
+        this._projectName = _environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__["environment"].projectName;
+    }
+    SignupComponent.prototype.ngOnInit = function () {
+        this.validateForm = this.fb.group({
+            uname: [null, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
+            password: [null, [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["Validators"].required]],
+        });
+    };
+    SignupComponent.prototype.getFormControl = function (name) {
+        return this.validateForm.controls[name];
+    };
+    SignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'signup',
+            template: __webpack_require__(/*! ./signup.component.html */ "./src/app/components/signup/signup.component.html"),
+            styles: ["\n \n  "]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
+    ], SignupComponent);
+    return SignupComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/service/layout.service.ts":
 /*!*******************************************!*\
   !*** ./src/app/service/layout.service.ts ***!
@@ -875,7 +1327,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var ng_zorro_antd__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ng-zorro-antd */ "./node_modules/ng-zorro-antd/fesm5/ng-zorro-antd.js");
-/* harmony import */ var _mock_menus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! _mock/menus */ "./_mock/menus.ts");
+/* harmony import */ var _mock_menus__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! _mock/_menus */ "./_mock/_menus.ts");
+/* harmony import */ var src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/environments/environment.dev */ "./src/environments/environment.dev.ts");
+
 
 
 
@@ -919,7 +1373,7 @@ var LayoutService = /** @class */ (function () {
             };
             // LogService.debug(params);
             router
-                .navigate(['/' + 'budget' + '/' + menu.ROUTER], params)
+                .navigate(['/' + src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__["environment"].pid.toLocaleLowerCase() + '/' + menu.ROUTER], params)
                 .then(function () {
                 // this.providers.msgService.endAntLoading();
             })
@@ -933,7 +1387,7 @@ var LayoutService = /** @class */ (function () {
             // 开启加载条
             // this.providers.msgService.startAntLoading();
             router
-                .navigate(['/' + 'budget' + '/' + menu.ROUTER], {
+                .navigate(['/' + src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__["environment"].pid.toLocaleLowerCase() + '/' + menu.ROUTER], {
                 queryParams: {
                     refresh: refresh,
                     ID: menu.ID,
@@ -962,7 +1416,7 @@ var LayoutService = /** @class */ (function () {
             //发出跳转报表iframe的事件
             // router.navigate(['/budget//bgreport'], {
             router
-                .navigate(['/' + 'budget' + '/' + menu.ROUTER], {
+                .navigate(['/' + src_environments_environment_dev__WEBPACK_IMPORTED_MODULE_5__["environment"].pid.toLocaleLowerCase() + '/' + menu.ROUTER], {
                 queryParams: {
                     refresh: refresh,
                     ID: menu.ID,
@@ -1114,10 +1568,10 @@ var FcRouteReuseStrategy = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "./src/app/service/services.services.ts":
-/*!**********************************************!*\
-  !*** ./src/app/service/services.services.ts ***!
-  \**********************************************/
+/***/ "./src/app/service/system.services.ts":
+/*!********************************************!*\
+  !*** ./src/app/service/system.services.ts ***!
+  \********************************************/
 /*! exports provided: SystemService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1127,11 +1581,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var src_core_service_providers_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/core/service/providers.service */ "./src/core/service/providers.service.ts");
+
 
 
 
 var SystemService = /** @class */ (function () {
-    function SystemService(activatedRoute, router) {
+    function SystemService(providers, activatedRoute, router) {
+        this.providers = providers;
         this.activatedRoute = activatedRoute;
         this.router = router;
         // 初始化此工程方法
@@ -1149,7 +1606,8 @@ var SystemService = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
             providedIn: 'root'
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [src_core_service_providers_service__WEBPACK_IMPORTED_MODULE_3__["ProvidersService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]])
     ], SystemService);
     return SystemService;
 }());
@@ -2168,6 +2626,43 @@ var CommonService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/core/service/providers.service.ts":
+/*!***********************************************!*\
+  !*** ./src/core/service/providers.service.ts ***!
+  \***********************************************/
+/*! exports provided: ProvidersService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProvidersService", function() { return ProvidersService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _user_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./user.service */ "./src/core/service/user.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+
+var ProvidersService = /** @class */ (function () {
+    function ProvidersService(userService) {
+    }
+    /**
+     * 获取用户信息
+     */
+    ProvidersService.prototype.getUserInfo = function () {
+    };
+    ProvidersService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_user_service__WEBPACK_IMPORTED_MODULE_1__["UserService"]])
+    ], ProvidersService);
+    return ProvidersService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/core/service/user.service.ts":
 /*!******************************************!*\
   !*** ./src/core/service/user.service.ts ***!
@@ -2285,21 +2780,20 @@ var UserService = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
+//当前环境的文件内容将在构建期间覆盖这些内容。
+//构建系统默认使用`environment.ts`的开发环境，但是如果你这样做的话
+//开发环境使用`ng build --env = dev` 会使用`environment.dev.ts`代替。
+//可以在`.angular-cli.json`中找到environment映射到文件的列表。
 // 开发环境
 var environment = {
     production: false,
-    pid: "BUDGET",
-    projectName: "全面预算管理系统",
-    systemurl: "/server/",
-    apiurl: "/server/api/",
-    logurl: "/server/api/",
-    authurl: "/server/api/",
-    // wsurl: "ws://192.168.61.223:9000/server/msg",
-    wsurl: "ws://10.3.28.64:9080/server/msg",
+    pid: 'FC',
+    projectName: 'FC快速开发平台',
+    systemurl: '/server/',
+    apiurl: '/server/api/',
+    logurl: '/server/api/',
+    authurl: '/server/api/',
+    wsurl: 'ws://192.168.0.121:8080/server/msg',
     license: ''
 };
 
@@ -2315,27 +2809,35 @@ var environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
-/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
-/* harmony import */ var _environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment.dev */ "./src/environments/environment.dev.ts");
-/* harmony import */ var ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ag-grid-enterprise */ "./node_modules/ag-grid-enterprise/main.js");
-/* harmony import */ var ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _grapecity_spread_excelio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @grapecity/spread-excelio */ "./node_modules/@grapecity/spread-excelio/index.js");
+/* harmony import */ var _grapecity_spread_excelio__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_grapecity_spread_excelio__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _grapecity_spread_sheets__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @grapecity/spread-sheets */ "./node_modules/@grapecity/spread-sheets/index.js");
+/* harmony import */ var _grapecity_spread_sheets__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_grapecity_spread_sheets__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ag-grid-enterprise */ "./node_modules/ag-grid-enterprise/main.js");
+/* harmony import */ var ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment_dev__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./environments/environment.dev */ "./src/environments/environment.dev.ts");
 
 
 
 
 
 
+
+
+_grapecity_spread_sheets__WEBPACK_IMPORTED_MODULE_3__["Spread"].Sheets.LicenseKey = _grapecity_spread_excelio__WEBPACK_IMPORTED_MODULE_2__["LicenseKey"] =
+    '10.128.40.241|10.128.40.242|20.128.25.250|20.128.25.251|20.128.25.252|10.128.30.252,128761725868288#A0GJRproto/avozJukzqukfJjlLiOiEmTDJCLigDOygjN8UjM7EjN7gjMxIiOiQWSiwSflNHbhZmOiI7ckJye0ICbuFkI1pjIEJCLi4TPnplSLdnS8N5aD5EVwI6VvJTesNzb9kHeoZjQzcDeFFTMU5mW554cVJ4c9J6ap94LUlkMWBVc6FVSBR6aGRGTVF7KONXOzIlMC3marElU4oURn5kW4glI0IyUiwyMyUzNwYDOzUTM0IicfJye&Qf35VfiMjY6cmI0IyQiwiIxEjL6ByUKBCZhVmcwNlI0IiTis7W0ICZyBlIsISN4cDM4ADIxEjNwgTMwIjI0ICdyNkIsIiM5IjLwMjL8ITMuATMsITNy8SNy8COyEjLwIDLxUjMuUjMugjMx8CMywCM5IjL5IjL8ITMuAjMsIDNy8CM48COyEjLwEDLxQjMuADNugjMx8CMxIiOiMXbEJCLig1jlzahlDZmpnInm/KnmDoimb1ukVa/o';
 // spread报表授权
-ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_5__["LicenseManager"].setLicenseKey('OTQ1MzA4OTQ1Njk3Mw==390bb30c7ca829b2dcbef7b197f8d33e');
-if (_environments_environment_dev__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
+ag_grid_enterprise__WEBPACK_IMPORTED_MODULE_4__["LicenseManager"].setLicenseKey('OTQ1MzA4OTQ1Njk3Mw==390bb30c7ca829b2dcbef7b197f8d33e');
+if (_environments_environment_dev__WEBPACK_IMPORTED_MODULE_7__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])()
-    .bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])()
+    .bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_6__["AppModule"])
     .catch(function (err) { return console.error(err); });
 
 
