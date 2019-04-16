@@ -11,8 +11,8 @@ import { NgZorroAntdModule } from 'ng-zorro-antd'
 import { BgspreadComponent } from './components/bgspread/bgspread.component'
 import { BgtableComponent } from './components/bgtable/bgtable.component'
 import { BgiframeComponent } from './components/bgiframe/bgiframe.component'
-// 不要用npm安装的,否则aot打包无法通过
 import { SpreadSheetsModule } from 'src/assets/plugin/spread/gc.spread.sheets.angular';
+import { FccomponentModule } from 'src/fccomponents/fccomponent.module';
 @NgModule({
   imports: [
     CommonModule,
@@ -20,7 +20,8 @@ import { SpreadSheetsModule } from 'src/assets/plugin/spread/gc.spread.sheets.an
     ReactiveFormsModule,
     RouterModule.forChild(Routers),
     NgZorroAntdModule,
-    SpreadSheetsModule
+    SpreadSheetsModule,
+    FccomponentModule
   ],
   declarations: [
     BglistinfoComponent, // 查询
