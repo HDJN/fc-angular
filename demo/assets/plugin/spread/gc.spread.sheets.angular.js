@@ -195,7 +195,7 @@ var SpreadSheetsComponent = /** @class */ (function () {
             width: '800px',
             height: '600px'
         };
-        //outputs events
+        // outputs events
         this.workbookInitialized = new EventEmitter();
         this.validationError = new EventEmitter();
         this.cellClick = new EventEmitter();
@@ -318,7 +318,8 @@ var SpreadSheetsComponent = /** @class */ (function () {
             'RowChanged', 'ActiveSheetChanging', 'ActiveSheetChanged',
             'SparklineChanged',
             'RangeChanged', 'ButtonClicked', 'EditorStatusChanged',
-            'FloatingObjectChanged', 'FloatingObjectSelectionChanged', 'PictureChanged', 'FloatingObjectRemoving', 'FloatingObjectRemoved', 'PictureSelectionChanged',
+            'FloatingObjectChanged', 'FloatingObjectSelectionChanged', 'PictureChanged', 'FloatingObjectRemoving',
+            'FloatingObjectRemoved', 'PictureSelectionChanged',
             'FloatingObjectLoaded', 'TouchToolStripOpening', 'CommentChanged', 'CommentRemoving', 'CommentRemoved', 'SlicerChanged'];
         events.forEach(function (event) {
             spread.bind(event + customEventNameSpace, function (event, data) {
@@ -378,4 +379,3 @@ var SpreadSheetsModule = /** @class */ (function () {
     return SpreadSheetsModule;
 }());
 export { SpreadSheetsModule };
-//# sourceMappingURL=gc.spread.sheets.angular.js.map
